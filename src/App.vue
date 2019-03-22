@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!--load login when user enter-->
+    <Vlogin></Vlogin>
   </div>
 </template>
 
 <script>
+  import Vlogin from './components/account/login'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Vlogin
+  }
+
 }
 </script>
 
